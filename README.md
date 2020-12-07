@@ -14,7 +14,7 @@ npm install
 ng serve
 ```
 
-Once started, user interface is available at [http://localhost:4200/](http://localhost:4200/). Credentials for initial login are "user" and "pass"
+Once started, user interface is available at [http://localhost:4200/](http://localhost:4200/)
 
 
 

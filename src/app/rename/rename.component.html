@@ -1,0 +1,13 @@
+<div>
+  
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Fill required field (max 30 chars)</mat-label>
+      <input matInput [(ngModel)]="newName" placeholder="New name">
+      <mat-hint>Old name: {{oldName}}</mat-hint>
+    </mat-form-field>
+  </p>
+<p class='right'>
+  <button mat-raised-button mat-button color="primary" class="button" (click)='save()' [disabled]='newName.length > 20'>Rename</button>
+</p>
+</div>

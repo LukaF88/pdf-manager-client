@@ -23,14 +23,35 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
+
+
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/ngx-extended-pdf-viewer/assets/locale",
+                "output": "/assets/locale/"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/ngx-extended-pdf-viewer/assets/images",
+                "output": "/assets/images/"
+              },
+              { 
+                "glob": "pdf.worker.js",
+                "input": "node_modules/ngx-extended-pdf-viewer/assets", 
+                "output": "/assets/" 
+              }
+            ],
+            "scripts": [
+              "node_modules/ngx-extended-pdf-viewer/assets/pdf-es5.js",
+              "node_modules/ngx-extended-pdf-viewer/assets/viewer-es5.js"
             ],
             "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+                      "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+                      "src/styles.scss"
+                      ]
           },
           "configurations": {
             "production": {
@@ -93,6 +114,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -124,6 +146,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "pdf-manager-client"
 }

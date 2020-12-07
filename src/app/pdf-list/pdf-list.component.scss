@@ -1,0 +1,42 @@
+table {
+    width: 100%;
+  }
+
+.red {
+  color: red;
+  float: right;
+}
+
+.icon {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.viewtype {
+  float: right;
+}
+
+.separator {
+  height: 100px;
+}
+
+.thumb-wrapper {
+  background-color:#efefef;
+}
+
+@media only screen and (max-width: 900px) {
+  .bigonly{
+      display: none;
+  }
+  td.mat-cell:first-of-type {
+    padding-left: 10px;
+  }
+
+  td.mat-cell:last-of-type {
+    padding-right: 0px;
+  }
+}
